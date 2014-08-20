@@ -9,7 +9,8 @@ Key features :
 * Storm Spout and bolt with the basic functionality
 * HBase client 
 * MapReduce framework
-* 
+* Google Guava Cache
+* Codehale metrics
 
 ## In Progress
 
