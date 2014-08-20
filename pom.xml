@@ -26,6 +26,8 @@
 		<hadoop.version>2.3.0-cdh5.1.0</hadoop.version>
 		<hadoop.mr.version>2.3.0-mr1-cdh5.1.0</hadoop.mr.version>
 		<hive.version>0.12.0-cdh5.1.0</hive.version>
+		<guava.version>17.0</guava.version>
+		<codehale.version>3.0.2</codehale.version>
 	</properties>
 
 	<dependencies>
@@ -35,6 +37,20 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.codahale.metrics</groupId>
+			<artifactId>metrics-core</artifactId>
+			<version>${codehale.version}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.apache.kafka</groupId>
 			<artifactId>kafka_2.10</artifactId>
