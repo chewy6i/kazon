@@ -8,15 +8,16 @@ Key features :
 * Kafka producer and consumer with the basic functionality 
 * Storm Spout and bolt with the basic functionality
 * HBase client 
-* MapReduce framework
+* Hadoop MapReduce framework
+* Spark
 * Google Guava Cache
 * Codehale metrics
 
-## In Progress
+## In Progress or future
 
 * Yarn wrappers
 * Cassandra Wrappers
 * Zookeeper Wrappers
 * Couchbase Client
 * Riak Client
-* 
+
