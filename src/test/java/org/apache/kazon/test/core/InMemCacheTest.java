@@ -1,4 +1,4 @@
-package org.apache.kazon.test;
+package org.apache.kazon.test.core;
 
 import org.apache.kazon.cache.InMemCache;
 

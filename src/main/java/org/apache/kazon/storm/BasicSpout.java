@@ -7,25 +7,27 @@ import backtype.storm.task.TopologyContext;
 import backtype.storm.topology.OutputFieldsDeclarer;
 import backtype.storm.topology.base.BaseRichSpout;
 
-public class KazonSpout extends BaseRichSpout {
+public class BasicSpout extends BaseRichSpout {
 
 	private static final long serialVersionUID = 7635156906752519841L;
-
+	
+	private SpoutOutputCollector collector;
+	
 	@Override
 	public void nextTuple() {
-		// TODO Auto-generated method stub
+		// collector.emit("stream3", new Values(line));
 		
 	}
 
 	@Override
-	public void open(Map arg0, TopologyContext arg1, SpoutOutputCollector arg2) {
-		// TODO Auto-generated method stub
+	public void open(Map conf, TopologyContext context, SpoutOutputCollector collector) {
+		this.collector = collector;
 		
 	}
 
 	@Override
 	public void declareOutputFields(OutputFieldsDeclarer arg0) {
-		// TODO Auto-generated method stub
+		// declarer.declareStream("stream3", new Fields("row"));
 		
 	}
 
